@@ -68,9 +68,9 @@ class Pagofacil_Pagofacildirect_WebhookController extends Mage_Core_Controller_F
 
     public function threedSecurePfAction(){
 
-  	   $this->loadLayout();
+  		$this->loadLayout();
 
-        $this->renderLayout();
+      $this->renderLayout();
 
     }
 

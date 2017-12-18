@@ -192,6 +192,11 @@ class Pagofacil_Pagofacildirect_Model_Standard extends Mage_Payment_Model_Method
         return $this->getConfigData('tdsecure');
     }
 
+    public function enviromentConfig()
+    {
+        return $this->getConfigData('prod');
+    }
+
     public function addDataTreeDSecure()
     {
         $sessionCheckout = Mage::getSingleton('checkout/session');
