@@ -212,8 +212,8 @@ class Pagofacil_Pagofacildirect_Model_Standard extends Mage_Payment_Model_Method
         $info['prod'] = trim($this->getConfigData('prod'));
         $info['idSucursal'] = trim($this->getConfigData('sucursalkey'));
         $info['idUsuario'] = trim($this->getConfigData('usuariokey'));
-//$info['monto'] = $grandTotal;
-$info['monto'] = 1;
+        $info['monto'] = $grandTotal;
+
         $info['ipBuyer'] = $_SERVER['REMOTE_ADDR'];
         $info['noMail'] = ((int)trim($this->getConfigData('notify')) == 1 ? 0 : 1 );
         $info['plan'] = ( (int)trim($this->getConfigData('msi')) == 1 ? ($info['mensualidades'] == '00' ? 'NOR' : 'MSI' ) : 'NOR' );
