@@ -12,19 +12,20 @@ class Pagofacil_Pagofacildirect_Model_Api
      * URL del servicio de PagoFacil en ambiente de desarrollo
      * @var string 
      */
-
-    protected $_urlDemo = 'https://sandbox.pagofacil.tech/Wsrtransaccion/index/format/json';
     
+    protected $_urlDemo = 'https://sandbox.pagofacil.tech/Magento/Magento/index/format/json/?method=transaccion';
+
     /**
      * URL del servicio de PagoFacil para verificar el cobro
      * @var string 
      */
-    protected $_urlVerify = 'http://core.dev/Magento/Magento/querytrans/';
-    
+    protected $_urlVerify = 'https://api.pagofacil.tech/Magento/Magento/querytrans/';
+
     /**
      * URL del servicio de PagoFacil en ambiente de produccion
      * @var string 
      */
+    
     protected $_urlProd = 'https://api.pagofacil.tech/Wsrtransaccion/index/format/json';
 
     /**
