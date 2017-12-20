@@ -160,7 +160,7 @@ class Pagofacil_Pagofacildirect_Model_Api
      */
     private function infoBuild($tipo, array $info )
     {
-
+        
         // Datos para la peticion del servicio
         $data = array(
             'idServicio'        => '3',
@@ -173,7 +173,7 @@ class Pagofacil_Pagofacildirect_Model_Api
             'cp'                => $info['cp'],
             'mesExpiracion'     => $info['mesExpiracion'],
             'anyoExpiracion'    => $info['anyoExpiracion'],
-            'monto'             => 1,
+            'monto'             => $info['monto'],
             'email'             => $info['email'],
             'telefono'          => $info['telefono'],
             'celular'           => $info['celular'],
